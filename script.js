@@ -26,14 +26,19 @@ let computerScore = 0
 let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice();
 
-    if(humanChoice === 'paper' && computerChoice === 'rock' || humanChoice === 'rock' && computerChoice === 'scissors' || humanChoice === 'scissors' && computerChoice === 'paper' ) {
-        console.log('You win.')
+ let playRound = function()   {if(humanChoice === 'paper' && computerChoice === 'rock' || humanChoice === 'rock' && computerChoice === 'scissors' || humanChoice === 'scissors' && computerChoice === 'paper' ) {
+        console.log('You win.');
+        humanScore ++
     }
    else if(humanChoice === computerChoice) {
-            console.log('Tie')
+            console.log('Tie');
+            humanScore ++;
+            computerScore ++
         }
         else {
-                console.log('You lose.')
+                console.log('You lose.');
+                computerScore ++
                 }
+}
             
             
