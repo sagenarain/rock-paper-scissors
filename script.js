@@ -23,6 +23,10 @@ let humanScore = 0
 let computerScore = 0
 //play a round
 function playRound(humanChoice, computerChoice) {
-   let humanSelection = getHumanChoice()
-   let computerSelection = getComputerChoice()
+   
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
